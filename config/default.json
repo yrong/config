@@ -19,12 +19,29 @@
     "port":3002,
     "secret": "WEvHL/pbqX6qpqrcORwHQYWmNWnguxiaMEHd7eWnZB1toHzO",
     "expiration": 1800,
+    "userFieldsIgnored4Token":["passwd","id","token"],
+    "tokenFieldName":"token",
+    "userFieldName":"token_user",
+    "internalUsedToken":"qwe!@#",
     "sms":{
-      "AppCode":"f8d9f27e5c8345e09cda219e97698688",
+      "AppCode":"b0eed151df1640d188bdd7ed93f89506",
       "expiration": 120,
       "sendFlag": false
     },
-    "userFieldsIgnored4Token":["passwd","id","token"]
+    "ldap":{
+      "url": "ldap://localhost:389",
+      "bindType":"cn",
+      "bindDn": "cn=admin,dc=test,dc=com",
+      "bindCredentials": "admin",
+      "searchFilter": "(cn={{username}})",
+      "userSearchBase": "dc=test,dc=com",
+      "departmentSearchBase": "dc=test,dc=com",
+      "userClass": "posixAccount",
+      "userAttributes":["dn","cn","uidNumber"],
+      "departmentClass":"posixGroup",
+      "departmentAttributes":["dn","cn","gidNumber"],
+      "reconnect": true
+    }
   },
   "notifier":{
     "host":"192.168.0.100",
@@ -114,20 +131,6 @@
     "user": "root",
     "password": "root",
     "database": "zabbix"
-  },
-  "ldap":{
-    "url": "ldap://localhost:389",
-    "bindType":"dn",
-    "bindDn": "cn=admin,dc=test,dc=com",
-    "bindCredentials": "admin",
-    "searchFilter": "(cn={{username}})",
-    "userSearchBase": "ou=users,dc=test,dc=com",
-    "departmentSearchBase": "dc=test,dc=com",
-    "userClass": "posixAccount",
-    "userAttributes":["dn","cn","uidNumber"],
-    "departmentClass":"posixGroup",
-    "departmentAttributes":["dn","cn","gidNumber"],
-    "reconnect": true
   },
   "nextcloud":{
     "host":"http://localhost:8089/FileStore",
