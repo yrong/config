@@ -18,7 +18,7 @@
     "host":"192.168.0.100",
     "port":3002,
     "secret": "WEvHL/pbqX6qpqrcORwHQYWmNWnguxiaMEHd7eWnZB1toHzO",
-    "expiration": 1800,
+    "expiration": 86400,
     "userFieldsIgnored4Token":["passwd","id","token"],
     "tokenFieldName":"token",
     "userFieldName":"token_user",
@@ -49,7 +49,8 @@
   },
   "scmpz":{
     "host":"192.168.0.100",
-    "port":3003
+    "port":3003,
+    "statistic_tbl_name":"triggers_statistic"
   },
   "vehicle":{
     "host":"192.168.0.100",
