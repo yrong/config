@@ -14,3 +14,5 @@ else
   mkdir -p release
   tar -zcvf release/$NODE_NAME-$git_commit_date-$git_commit_id.tar.gz ./build
 fi
+
+yarn install
