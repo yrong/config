@@ -19,7 +19,7 @@
     "port":3002,
     "secret": "WEvHL/pbqX6qpqrcORwHQYWmNWnguxiaMEHd7eWnZB1toHzO",
     "expiration": 86400,
-    "userFieldsIgnored4Token":["passwd","id","token"],
+    "userFieldsIgnored4Token":["passwd","id","token","newpwd","oldpwd"],
     "tokenFieldName":"token",
     "userFieldName":"token_user",
     "internalUsedToken":"qwe!@#",
