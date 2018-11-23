@@ -40,7 +40,8 @@
       "userAttributes":["dn","cn","uidNumber"],
       "departmentClass":"posixGroup",
       "departmentAttributes":["dn","cn","gidNumber"],
-      "reconnect": true
+      "reconnect": true,
+      "checkExist":false
     }
   },
   "notifier":{
