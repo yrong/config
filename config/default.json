@@ -6,7 +6,7 @@
   "logger":{
     "defaultLevel":"DEBUG"
   },
-  "timeout": 10000,
+  "timeout": 30000,
   "addRefUniqueNameField": false,
   "cmdb":{
     "host":"192.168.0.100",
@@ -176,6 +176,9 @@
     },
     "vehicle":{
       "json_export_dir":"/vehicle/export"
+    },
+    "echo":{
+      "json_export_dir":"/echo/export"
     },
     "scmpz":{
       "image_dir":"/scmpz/images"
