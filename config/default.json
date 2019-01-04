@@ -170,19 +170,6 @@
     "publish_contract_gas_limit": 300000
   },
   "runtime_data":{
-    "cmdb":{
-      "json_export_dir":"/cmdb/export",
-      "qr_image_dir":"/cmdb/qr_image"
-    },
-    "vehicle":{
-      "json_export_dir":"/vehicle/export"
-    },
-    "echo":{
-      "json_export_dir":"/echo/export"
-    },
-    "scmpz":{
-      "image_dir":"/scmpz/images"
-    },
     "upload": {
       "excel": {
         "provider": "local",
