@@ -72,6 +72,9 @@
     "expiredEventSubscriber":{"roles":["financial_staff"]},
     "expiredLegacyDate":"2018-06-19"
   },
+  "drive": {
+    "port":3007
+  },
   "echo":{
     "port":3006
   },
