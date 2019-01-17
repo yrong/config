@@ -112,7 +112,8 @@
     "port": 9200,
     "user":"elastic",
     "password":"elastic",
-    "mode": "strict"
+    "mode": "strict",
+    "ignoreAggrMetaFields": false
   },
   "redis": {
     "host": "localhost",
