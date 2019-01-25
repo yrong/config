@@ -32,6 +32,8 @@
     "tokenFieldName":"token",
     "userFieldName":"token_user",
     "internalUsedToken":"qwe!@#",
+    "apiUrlPattern": "\\/api",
+    "ignoredUrlPattern": "\\/no_auth|\\/hidden",
     "sms":{
       "AppCode":"b0eed151df1640d188bdd7ed93f89506",
       "expiration": 120,
