@@ -20,11 +20,9 @@
     }
   },
   "kb":{
-    "host":"192.168.0.100",
     "port":3000
   },
   "auth":{
-    "host":"192.168.0.100",
     "port":3002,
     "secret": "WEvHL/pbqX6qpqrcORwHQYWmNWnguxiaMEHd7eWnZB1toHzO",
     "expiration": 86400,
@@ -56,16 +54,13 @@
     }
   },
   "notifier":{
-    "host":"192.168.0.100",
     "port":3004
   },
   "scmpz":{
-    "host":"192.168.0.100",
     "port":3003,
     "statistic_tbl_name":"triggers_statistic"
   },
   "vehicle":{
-    "host":"192.168.0.100",
     "port":3005,
     "validateOrderPayment":false,
     "expiredPeriod": 3,
@@ -81,7 +76,6 @@
     "port":3006
   },
   "gateway":{
-    "host":"192.168.0.100",
     "port":8080,
     "proxy_rules":{
       "/cmdb-api": "{{cmdb}}",
@@ -90,7 +84,6 @@
     }
   },
   "filechain":{
-    "host":"192.168.0.100",
     "port":8081
   },
   "mail": {
