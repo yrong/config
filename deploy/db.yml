@@ -12,7 +12,7 @@ services:
         nofile:
           soft: 65536
           hard: 65536
-      command: redis-server --appendonly yes
+      command: redis-server --appendonly yes --requirepass admin
       volumes:
         - $DB_DATA/redis:/data
       ports:

@@ -9,7 +9,7 @@
   "timeout": 30000,
   "addRefUniqueNameField": false,
   "cmdb":{
-    "host":"192.168.0.100",
+    "host":"localhost",
     "port":3001,
     "expiredWarningPeriod": 180,
     "expiredWarning2ndPeriod": 30,
@@ -20,11 +20,11 @@
     }
   },
   "kb":{
-    "host":"192.168.0.100",
+    "host":"localhost",
     "port":3000
   },
   "auth":{
-    "host":"192.168.0.100",
+    "host":"localhost",
     "port":3002,
     "secret": "WEvHL/pbqX6qpqrcORwHQYWmNWnguxiaMEHd7eWnZB1toHzO",
     "expiration": 86400,
@@ -56,16 +56,16 @@
     }
   },
   "notifier":{
-    "host":"192.168.0.100",
+    "host":"localhost",
     "port":3004
   },
   "scmpz":{
-    "host":"192.168.0.100",
+    "host":"localhost",
     "port":3003,
     "statistic_tbl_name":"triggers_statistic"
   },
   "vehicle":{
-    "host":"192.168.0.100",
+    "host":"localhost",
     "port":3005,
     "validateOrderPayment":false,
     "expiredPeriod": 3,
@@ -81,7 +81,7 @@
     "port":3006
   },
   "gateway":{
-    "host":"192.168.0.100",
+    "host":"localhost",
     "port":8080,
     "proxy_rules":{
       "/cmdb-api": "{{cmdb}}",
@@ -90,7 +90,7 @@
     }
   },
   "filechain":{
-    "host":"192.168.0.100",
+    "host":"localhost",
     "port":8081
   },
   "mail": {
@@ -119,7 +119,9 @@
   },
   "redis": {
     "host": "localhost",
-    "port": 6379
+    "port": 6379,
+    "auth_pass": "admin",
+    "no_ready_check": true
   },
   "postgres-kb": {
     "host": "localhost",
