@@ -1,6 +1,8 @@
 {
   "perPageSize":2000,
   "wrapResponse": true,
+  "checkLicense": true,
+  "globalTransaction": true,
   "additionalPropertyCheck":false,
   "preImportReference":true,
   "logger":{
@@ -107,7 +109,7 @@
     "host": "localhost",
     "port": 7687,
     "user": "neo4j",
-    "password": "admin"
+    "password": "neo4j"
   },
   "elasticsearch":{
     "host": "localhost",
