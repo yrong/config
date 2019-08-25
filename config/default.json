@@ -1,7 +1,9 @@
 {
   "perPageSize":2000,
   "wrapResponse": true,
+  "enableCors": false,
   "checkLicense": true,
+  "checkAuth": true,
   "globalTransaction": true,
   "additionalPropertyCheck":false,
   "preImportReference":true,
